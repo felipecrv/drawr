@@ -78,7 +78,7 @@ impl Dimensions {
     fn margin_box_height(&self) -> f32 {
         self.height + self.padding.top + self.padding.bottom
                     + self.border.top + self.border.bottom
-                    + self.padding.top + self.padding.bottom
+                    + self.margin.top + self.margin.bottom
     }
 }
 
@@ -233,7 +233,7 @@ impl<'a> LayoutBox<'a> {
 
         d.border.top = style.lookup("border-top-width", "border-width", &zero).to_px();
         d.border.bottom = style.lookup("border-bottom-width", "border-width", &zero).to_px();
- 
+
         d.padding.top = style.lookup("padding-top", "padding", &zero).to_px();
         d.padding.bottom = style.lookup("padding-bottom", "padding", &zero).to_px();
 

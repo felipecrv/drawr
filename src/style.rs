@@ -49,7 +49,6 @@ impl<'a> StyledNode<'a> {
     }
 }
 
-
 fn matches(elem: &ElementData, selector: &Selector) -> bool {
     match *selector {
         Simple(ref simple_selector) => matches_simple_selector(elem, simple_selector)
