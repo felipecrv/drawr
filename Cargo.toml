@@ -1,0 +1,9 @@
+[package]
+name = "drawr"
+version = "0.0.1"
+authors = ["Felipe Carvalho <felipekde@gmail.com>"]
+tags = []
+
+[[bin]]
+name = "drawr"
+path = "src/main.rs"
